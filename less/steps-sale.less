@@ -1,0 +1,112 @@
+.steps-sale {
+    position: relative;
+    padding: 56px 0 0 0;
+    margin-bottom: 65px;
+    &__title {
+        margin: 0 auto 53px auto;
+        text-align: center;
+        font-family: Calibri, sans-serif;
+        font-size: 35px;
+        &:after {
+            content: "";
+            width: 53%;
+            display: block;
+            margin: 12px auto 0 auto;
+            border-top: 1px solid #cad5d5;
+        }
+    }
+    &__list {
+        background: url(../images/steps-sale/kernel.png) no-repeat center top;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 0 10px 0;
+        margin: 0 auto 10px 0;
+    }
+
+    &__item {
+        width: calc(~'100%/2 - 83px');
+        display: inline-block;
+        margin-bottom: 65px;
+        h5 {
+            margin: 0 0 20px 0;
+            font-family: Calibri, sans-serif;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        ul {
+            padding: 0;
+            font-size: 15px;
+            li {
+                line-height: 1.8;
+                list-style-type: none;
+                background: url(../images/steps-sale/li-dot.png) no-repeat center left;
+                padding-left: 18px;
+            }
+        }
+        &:nth-child(2n) {
+            text-align: left;
+        }
+        &:nth-child(2n+1) {
+            text-align: right;
+        }
+
+        &_add-img {
+            img {
+                padding-top: 5px;
+            }
+            margin-bottom: 65px;
+        }
+        &_add-text {
+            h5 {
+                padding-top: 5px;
+            }
+            margin-bottom: 65px;
+        }
+        &_wait-text {
+            h5 {
+                padding-top: 12px;
+            }
+            margin-bottom: 97px;
+        }
+        &_wait-img {
+            margin-bottom: 97px;
+        }
+        &_deal-img {
+            margin-bottom: 64px;
+        }
+        &_deal-text {
+            margin-bottom: 64px;
+            h5 {
+                margin-bottom: 8px;
+            }
+            a {
+                padding-left: 18px;
+                font-size: 15px;
+                &:first-letter {
+                    color: black;
+                }
+            }
+        }
+        &_calculation-text {
+            margin-bottom: 0;
+            h5 {
+                padding-top: 19px;
+                margin: 0;
+            }
+        }
+        &_calculation-img {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.steps-sale__button__application {
+    color: #ffffff;
+    background-color: #fdbd41;
+    border-color: #fdbd41;
+    &:hover {
+        color: #fdbd41;
+    }
+ }
