@@ -1,5 +1,5 @@
 .our-advantages {
-    padding: 58px 0 20px 0;
+    padding: 58px 0 87px 0;
     background: #f4fcff;
     &__title {
         display: block;
@@ -57,17 +57,48 @@
     }
 
     &__quote {
-        p {
-            font-size: 15px;
-        }
-        q {
-
-        }
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        text-align: right;
+        font-family: "Open Sans", sans-serif;
+        
+        //&:before {
+        //    content: "";
+        //    width: 70%;
+        //    display: block;
+        //    padding-top: 9px;
+        //    padding-bottom: 9px;
+        //    padding-left: 10px;
+        //    background: url(../images/advantages/qoute.png) no-repeat left;
+        //    border-top: 3px solid #48dd8c;
+        //}
+        //&:after {
+        //    content: "";
+        //    width: 70%;
+        //    display: block;
+        //    padding-top: 9px;
+        //    padding-bottom: 9px;
+        //    padding-left: 10px;
+        //    background: url(../images/advantages/qoute.png) no-repeat right;
+        //    border-top: 3px solid #48dd8c;
+        //    text-align: right;
+        //}
+    }
+    &__quote-text {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+    }
+    &__quote-author {
+        position: relative;
+        left: 0;
+        display: inline-block;
+        margin: 0;
     }
 }
 
 .advantage {
-    width: calc(~'100%/2 - 37px');
+    width: calc(~'100%/2 - 25px');
     padding-left: 60px;
     margin-bottom: 23px;
     h5 {

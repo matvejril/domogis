@@ -1,0 +1,81 @@
+.interesting-site {
+    padding: 58px 0 68px 0;
+    background: #f4fcff;
+    &__title {
+        display: block;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        font-family: Calibri, sans-serif;
+        font-size: 35px;
+        &:after {
+            content: "";
+            width: 53%;
+            display: block;
+            margin: 12px auto 0 auto;
+            border-top: 1px solid #cad5d5;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 10px 0;
+    }
+    &__video {
+        width: calc(~'39% - 44px');
+    }
+    &__video-player {
+        box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    }
+    &__arrow {
+        margin: 0;
+        font-size: 17px;
+        float: right;
+        &:after {
+            content: url(../images/arrow.png);
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+
+    &__text {
+        width: calc(~'61% - 39px');
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 47px 0 0 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+.interesting-item {
+    width: calc(~'100%/2 - 37px');
+    padding-left: 60px;
+    margin-bottom: 23px;
+    h5 {
+        margin: 0 0 10px 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    &_map {
+        background: url(../images/quick-questions/magnifier-icon.png) no-repeat top left;
+    }
+    &_any-device {
+        background: url(../images/quick-questions/computer-icon.png) no-repeat top left;
+    }
+    &_stations {
+        background: url(../images/quick-questions/stations-icon.png) no-repeat top left;
+    }
+    &_characteristics {
+        background: url(../images/quick-questions/notebook-icon.png) no-repeat top left;
+    }
+}
