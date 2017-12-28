@@ -1,30 +1,30 @@
 .profitable-sale {
-    padding: 55px 0 66px 0;
+    padding: 61px 0 48px 0;
     &__title {
         display: block;
         margin: 0 auto 60px auto;
         text-align: center;
-        font-family: Calibri, sans-serif;
-        font-size: 35px;
+        font-family: OpenSansSemibold, sans-serif;
+        font-size: 30px;
         &:after {
             content: "";
             width: 53%;
             display: block;
-            margin: 12px auto 0 auto;
+            margin: 14px auto 0 auto;
             border-top: 1px solid #cad5d5;
         }
     }
 
     &__content {
-        width: 81%;
+        width: 82%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         figure {
             text-align: center;
-            width: calc(~'100%/3 - 10px');
-            margin: 0;
+            width: 240px;
+            margin: 0 0 20px 0;
             img {
                 margin-bottom: 25px;
             }
@@ -39,6 +39,17 @@
                     margin-top: 5px;
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .profitable-sale {
+        padding-bottom: 20px;
+        &__title {
+            margin-bottom: 30px;
+            font-size: 25px;
         }
     }
 }

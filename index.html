@@ -249,45 +249,36 @@
     <div class="steps-sale">
         <div class="container">
             <h2 class="steps-sale__title">Как продать Дом, Дачу или Участок?</h2>
-            <ul class="steps-sale__list">
+            <div class="steps-sale__content">
+                <img class="steps-sale__kernel" src="images/steps-sale/kernel.png" alt="kernel">
 
-                <li class="steps-sale__item steps-sale__item_add-img">
-                    <img src="images/steps-sale/add.png" alt="add">
-                </li>
-                <li class="steps-sale__item steps-sale__item_add-text">
-                    <h5>Подать бесплатно объявление о продаже <br>на DomoGis.ru</h5>
+                <ul class="steps-sale__list">
+                    <li class="steps-sale-item steps-sale-item_add">
+                        <h5>Подать бесплатно объявление о продаже <br>
+                            на DomoGis.ru
+                        </h5>
+                        <a href="/login" class="button steps-sale__button__application button__size_l js-main-login">
+                            <span class="button__text">Подать объявление</span>
+                        </a>
+                    </li>
+                    <li class="steps-sale-item steps-sale-item_wait">
+                        <h5>Дождаться звонков покупателей</h5>
+                        <img src="images/steps-sale/wait.png" alt="wait">
+                    </li>
+                    <li class="steps-sale-item steps-sale-item_deal">
+                        <h5>Провести сделку</h5>
+                        <ul>
+                            <li>Вариант 1: Самостоятельно подготовить документы</li>
+                            <li>Вариант 2: Воспользоваться <a href="#">услугами по сопровождению</a></li>
+                        </ul>
+                    </li>
+                    <li class="steps-sale-item steps-sale-item_calculation">
+                        <h5>Зарегистрировать сделку и получить оплату</h5>
+                    </li>
+                </ul>
+            </div>
 
-                    <a href="/login" class="button steps-sale__button__application button__size_l js-main-login">
-                        <span class="button__text">Подать объявление</span>
-                    </a>
-                </li>
 
-                <li class="steps-sale__item steps-sale__item_wait-text">
-                    <h5>Дождаться звонков покупателей</h5>
-                </li>
-                <li class="steps-sale__item steps-sale__item_wait-img">
-                    <img src="images/steps-sale/wait.png" alt="wait">
-                </li>
-
-                <li class="steps-sale__item steps-sale__item_deal-img">
-                    <img src="images/steps-sale/deal.png" alt="deal">
-                </li>
-                <li class="steps-sale__item steps-sale__item_deal-text">
-                    <h5>Провести сделку</h5>
-                    <ul>
-                        <li>Вариант 1: Самостоятельно подготовить документы</li>
-                        <li>Вариант 2: Воспользоваться услугами по сопровождению</li>
-                    </ul>
-                    <a href="#">(фиксированные экономичные тарифы)</a>
-                </li>
-
-                <li class="steps-sale__item steps-sale__item_calculation-text">
-                    <h5>Зарегистрировать сделку и получить оплату</h5>
-                </li>
-                <li class="steps-sale__item steps-sale__item_calculation-img">
-                    <img src="images/steps-sale/calculation.png" alt="calculation">
-                </li>
-            </ul>
         </div>
     </div>
 
@@ -297,7 +288,6 @@
             <div class="our-advantages__content">
                 <div class="our-advantages__video">
                     <video  class="our-advantages__video-player" src="#" poster="images/poster.jpg"></video>
-                    <p class="our-advantages__arrow">Видео как продать недвижимость</p>
                 </div>
                 <div class="our-advantages__text">
                     <h4 class="our-advantages__subtitle">А также много других преимуществ:</h4>
@@ -323,9 +313,12 @@
                     </ul>
                 </div>
             </div>
+            <p class="our-advantages__arrow">Видео как &#171;продать недвижимость&#187;</p>
             <div class="our-advantages__quote">
+                <p class="our-advantages__quote-open"></p>
                 <p class="our-advantages__quote-text">Сэкономленные деньги - все равно, что заработанные</p>
                 <p class="our-advantages__quote-author">Народная мудрость</p>
+                <p class="our-advantages__quote-close"></p>
             </div>
         </div>
     </div>
@@ -358,22 +351,28 @@
     </div>
 
     <div class="quick-questions">
+        <h2 class="quick-questions__title">И несколько Важных часто задаваемых вопросов:</h2>
         <div class="estate-objects">
             <div class="container">
-                <h2 class="quick-questions__title">И несколько Важных часто задаваемых вопросов:</h2>
                 <h3 class="estate-objects__title">Какие объекты можно разместить в разделе персональная недвижимость на сайте DomoGis.ru?</h3>
                 <div class="estate-objects__content">
-                    <ul class="estate-objects__list">
-                        <li class="estate-object estate-object_station">Участок</li>
-                        <li class="estate-object estate-object_country-house">Дача</li>
-                        <li class="estate-object estate-object_townhouse">Таунхаус</li>
-                        <li class="estate-object estate-object_house">Дом/коттедж</li>
-                        <li class="estate-object estate-object_part-house">Часть дома</li>
-                        <li class="estate-object estate-object_garage">Гараж</li>
-                    </ul>
-                    <div class="estate-objects__warning">
-                        Квартиры не размещаются на DomoGis.ru
-                        У нас таких не любят
+                    <div class="estate-objects__allowed">
+                        <h5>Можно</h5>
+                        <ul class="estate-objects__allowed-list">
+                            <li class="estate-object estate-object_station">Участок</li>
+                            <li class="estate-object estate-object_country-house">Дача</li>
+                            <li class="estate-object estate-object_townhouse">Таунхаус</li>
+                            <li class="estate-object estate-object_house">Дом/коттедж</li>
+                            <li class="estate-object estate-object_part-house">Часть дома</li>
+                            <li class="estate-object estate-object_garage">Гараж</li>
+                        </ul>
+                    </div>
+                    <div class="estate-objects__forbidden">
+                        <h5>Нельзя</h5>
+                        <ul class="estate-objects__forbidden-list">
+                            <li class="estate-object estate-object_apartment">Квартиры</li>
+                            <li class="estate-object estate-object_office">Офисы</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -385,17 +384,17 @@
                     В каких регионах можно разместить объявление о продаже недвижимости?
                 </h3>
                 <div class="estate-region__content">
-                    <h5>В первой половине 2018 сайт представлен в:</h5>
-                    <ul>
+                    <h5>В первой половине 2018 сайт объявления можно добавлять в*:</h5>
+                    <ul class="estate-region__list">
                         <li>Новосибирская область</li>
                         <li>Алтайский край</li>
                         <li>Республика Алтай</li>
-                        <li>Кемеровская</li>
+                        <li>Кемеровская область</li>
                         <li>Томская область*</li>
                     </ul>
-                    <h5>А покупатели будут как с Вашего региона,
-                        так и со всей России!</h5>
-                    <p>* в Новосибирской области сайт более широко представлен,
+                    <h6>А покупатели будут как с Вашего региона,
+                        так и со всей России!</h6>
+                    <p>* в Новосибирской области сайт более широко представлен,<br>
                         т.к. запустился с 01.09.17, в остальных регионах с 01.01.2018
                     </p>
                 </div>
@@ -407,44 +406,42 @@
         <div class="container">
             <h2 class="interesting-site__title">Чем интересен наш сайт DomoGis.ru покупателям недвижимости?</h2>
             <div class="interesting-site__content">
-                <div class="interesting-site__text">
-                    <ul class="interesting-site__list">
-                        <li class="interesting-item interesting-item_map">
-                            <h5>Объявление на карте</h5>
-                            <p>Самый удобный и быстрый
-                                поиск нужной недвижимости
-                            </p>
-                        </li>
+                <ul class="interesting-site__list">
+                    <li class="interesting-item interesting-item_map">
+                        <h5>Объявление на карте</h5>
+                        <p>Самый удобный и быстрый
+                            поиск нужной недвижимости
+                        </p>
+                    </li>
 
-                        <li class="interesting-item interesting-item_any-device">
-                            <h5>На любом устройстве</h5>
-                            <p>Пользоваться одинаково удобно - на
-                                компьютере, смартфоне и планшете
-                                100% адаптированная версия
-                            </p>
-                        </li>
+                    <li class="interesting-item interesting-item_any-device">
+                        <h5>На любом устройстве</h5>
+                        <p>Пользоваться одинаково удобно - на
+                            компьютере, смартфоне и планшете
+                            100% адаптированная версия
+                        </p>
+                    </li>
 
-                        <li class="interesting-item interesting-item_stations">
-                            <h5>Видны границы участка</h5>
-                            <p>Объекты недвижимости показаны
-                                не просто точкой, а с границами
-                                участка - наглядно и понятно
-                            </p>
-                        </li>
-                        <li class="interesting-item interesting-item_characteristics">
-                            <h5>Подробные характеристики</h5>
-                            <p>Детальная информация, характерная
-                                только для недвижимости на земле
-                                (дома, дачи, участки)
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="interesting-item interesting-item_stations">
+                        <h5>Видны границы участка</h5>
+                        <p>Объекты недвижимости показаны
+                            не просто точкой, а с границами
+                            участка - наглядно и понятно
+                        </p>
+                    </li>
+                    <li class="interesting-item interesting-item_characteristics">
+                        <h5>Подробные характеристики</h5>
+                        <p>Детальная информация, характерная
+                            только для недвижимости на земле
+                            (дома, дачи, участки)
+                        </p>
+                    </li>
+                </ul>
                 <div class="interesting-site__video">
                     <video  class="interesting-site__video-player" src="#" poster="images/poster.jpg"></video>
                 </div>
             </div>
-            <p class="interesting-site__arrow">Видео как продать недвижимость</p>
+            <p class="interesting-site__arrow">Видео как &#171;продать недвижимость&#187;</p>
         </div>
     </div>
 
@@ -468,7 +465,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="get-started__arrow">Видео как продать недвижимость</p>
+            <p class="get-started__arrow">Видео как &#171;продать недвижимость&#187;</p>
         </div>
     </div>
 </div>
