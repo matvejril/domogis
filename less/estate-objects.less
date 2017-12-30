@@ -1,0 +1,154 @@
+.estate-objects {
+    background-color: #f4fcff;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    h5 {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+    }
+    &__title {
+        margin: 0 0 45px 0;
+        text-align: center;
+        font-family: "OpenSansItalic", sans-serif;
+        font-size: 25px;
+        &:after {
+            content: "";
+            width: 53%;
+            display: block;
+            margin: 17px auto 0 auto;
+            border-top: 1px solid #cad5d5;
+        }
+    }
+    &__content {
+        width: 67%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__allowed {
+        width: 75%;
+        padding: 28px 0 28px 34px;
+        margin: 0;
+        background-color: #ebfff4;
+        box-sizing: border-box;
+    }
+    &__forbidden {
+        width: 25%;
+        padding: 28px 0 28px 34px;
+        margin: 0;
+        background-color: #ffefea;
+        box-sizing: border-box;
+    }
+
+    &__allowed-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__forbidden-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.estate-object {
+    padding: 15px 0 15px 65px;
+    margin-bottom: 7px;
+    width: 33%;
+    min-width: 140px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    &_station {
+        background: url(../images/quick-questions/station.png) no-repeat left center;
+    }
+    &_country-house {
+        background: url(../images/quick-questions/country-house.png) no-repeat left center;
+    }
+    &_townhouse {
+        background: url(../images/quick-questions/townhouse.png) no-repeat left center;
+    }
+    &_house {
+        background: url(../images/quick-questions/house.png) no-repeat left center;
+        margin-bottom: 0;
+    }
+    &_part-house {
+        background: url(../images/quick-questions/part-house.png) no-repeat left center;
+        margin-bottom: 0;
+    }
+    &_garage {
+        background: url(../images/quick-questions/garage.png) no-repeat left center;
+        margin-bottom: 0;
+    }
+    &_apartment {
+        width: 172px;
+        background: url(../images/quick-questions/apartment-icon.png) no-repeat left center;
+        padding-left: 60px;
+    }
+    &_office {
+        width: 172px;
+        background: url(../images/quick-questions/portfolio-icon.png) no-repeat left center;
+        margin-bottom: 0;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .estate-objects {
+        &__content {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .estate-objects {
+        white-space: normal;
+        padding-top: 25px;
+        &__content {
+            flex-wrap: wrap;
+        }
+        &__allowed {
+            width: 100%;
+            padding: 10px;
+        }
+        &__forbidden{
+            width: 100%;
+            padding: 10px;
+        }
+        &__forbidden-list {
+            justify-content: center;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .estate-object {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .estate-objects {
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .estate-object {
+        font-size: 15px;
+        padding-left: 40px;
+        background-size: 35px;
+    }
+}

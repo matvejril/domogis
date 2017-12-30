@@ -1,0 +1,33 @@
+ul.breadcrumbs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul.breadcrumbs li {
+    display: inline-block;
+    font-size: 12px;
+    color: #101312;
+}
+
+ul.breadcrumbs li:after {
+    content: '/';
+    color: #101312;
+    padding: 0 5px;
+}
+
+ul.breadcrumbs li:last-child:after {
+    content: '';
+    display: none;
+}
+
+ul.breadcrumbs li a {
+    text-decoration: none;
+    /*color: #797979;*/
+    color: #1d7ecf;
+}
+
+ul.breadcrumbs li a:hover {
+    text-decoration: underline;
+}

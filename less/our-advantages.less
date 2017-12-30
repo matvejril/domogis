@@ -17,6 +17,7 @@
     }
     &__content {
         display: flex;
+        margin-bottom: 130px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -27,9 +28,11 @@
         box-shadow: 0 0 50px rgba(0,0,0,0.3);
     }
     &__arrow {
-        margin: -10px 0 60px 7px;
+        margin: 5px 0 0 7px;
         font-size: 17px;
+        white-space: nowrap;
         &:after {
+            white-space: nowrap;
             content: url(../images/arrow.png);
             display: inline-block;
             margin-left: 15px;
@@ -129,6 +132,7 @@
     }
     &_non-conflicts {
         background: url(../images/advantages/non-conflicts.png) no-repeat top left;
+        margin-bottom: 0;
     }
 }
 
@@ -177,6 +181,10 @@
         }
         &__arrow {
             display: none;
+        }
+        &__quote-text {
+            margin: 0 0 16px 0;
+            font-size: 20px;
         }
     }
 }

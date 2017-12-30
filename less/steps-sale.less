@@ -87,8 +87,6 @@
             }
             &:nth-child(2) {
                 background-color: #ebfff4;
-                padding-left: 14px;
-                font-weight: 500;
             }
         }
     }
@@ -100,16 +98,6 @@
         }
     }
 }
-
-.steps-sale__button__application {
-    color: #ffffff;
-    background-color: #fdbd41;
-    border-color: #fdbd41;
-    &:hover {
-        color: #fdbd41;
-    }
-}
-
 
 @media screen and (max-width: 1180px) {
     .steps-sale {
@@ -126,25 +114,32 @@
         }
     }
     .steps-sale-item {
+        h5 {
+            font-size: 17px;
+        }
+        img {
+            width: 50px;
+        }
         &_add {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
         &_wait {
+            margin-bottom: 60px;
             h5 {
+                white-space: normal;
                 margin: 0;
             }
-            margin-bottom: 40px;
-            white-space: normal;
             img {
                 display: block;
                 margin: 0 auto;
             }
         }
         &_deal {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             ul {
                 li {
-                    line-height: 1.4;
+                    font-size: 14px;
+                    line-height: 1.3;
                 }
             }
         }
@@ -154,6 +149,7 @@
 
 @media screen and (max-width: 380px) {
     .steps-sale {
+        margin-bottom: 20px;
         &__title {
             font-size: 25px;
         }
@@ -167,22 +163,23 @@
     }
 
     .steps-sale-item {
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         h5 {
-            font-size: 20px;
+            font-size: 15px;
         }
         &_wait {
-            margin-bottom: 50px;
+            margin-bottom: 90px;
             h5 {
                 margin: 0;
             }
             img {
                 display: block;
+                width: 40px;
                 margin: 0 auto;
             }
         }
         &_deal {
-            margin-bottom: 3px;
+            margin-bottom: 30px;
             ul {
                 li {
                     line-height: 1.3;

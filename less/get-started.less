@@ -1,5 +1,5 @@
 .get-started {
-    padding: 62px 0 70px 0;
+    padding: 62px 0 118px 0;
     &__title {
         display: block;
         margin: 0 auto 60px auto;
@@ -43,9 +43,9 @@
         background-color: #f4fcff;
         text-align: center;
         padding: 10px 15px 15px 10px;
-        //h4 {
-        //
-        //}
+        a {
+            margin-bottom: 22px;
+        }
     }
     &__subtitle {
         font-family: "OpenSansSemibold", sans-serif;
@@ -53,11 +53,16 @@
         margin: 45px 0 30px 0;
     }
     &__info-list {
+        display: flex;
+        justify-content: space-between;
         list-style-type: none;
+        align-items: center;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
+        width: 85%;
     }
     &__info-item {
+        text-align: left;
         display: inline-block;
         padding: 12px 5px 12px 60px;
     }
@@ -70,17 +75,6 @@
 .get-started__info-item_money {
     background: url(../images/get-started/money-icon.png) no-repeat center left;
 }
-
-.get-started__button__application {
-    color: #ffffff;
-    background-color: #fdbd41;
-    border-color: #fdbd41;
-    margin-bottom: 30px;
-    &:hover {
-        color: #fdbd41;
-    }
-}
-
 
 @media screen and (max-width: 1180px) {
     .get-started {
@@ -116,10 +110,17 @@
     .get-started {
         padding: 35px 0 60px 0;
         &__title {
+            font-size: 20px;
             margin-bottom: 40px;
         }
         &__video-player {
             min-width: 300px;
+        }
+
+        &__info-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
         }
         &__info-item {
             padding-left: 50px;
