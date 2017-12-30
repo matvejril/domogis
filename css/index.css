@@ -7672,7 +7672,7 @@ span.select2-selection__placeholder {
   position: relative;
   background: url(../images/banner-bg.jpg) no-repeat center;
   background-size: cover;
-  padding-bottom: 26px;
+  padding: 13px 0;
 }
 .banner__exhortation_pc {
   width: 100%;
@@ -7680,27 +7680,26 @@ span.select2-selection__placeholder {
 .banner__exhortation_mobile {
   display: none;
 }
-@media screen and (max-width: 768px) {
+.banner .banner_inner {
+  padding: 0;
+}
+@media screen and (max-width: 1180px) {
   .banner {
-    padding-bottom: 0;
+    padding: 0;
   }
+}
+@media screen and (max-width: 768px) {
   .banner_inner {
     padding: 0;
   }
 }
 @media screen and (max-width: 380px) {
-  .banner {
-    padding-bottom: 0;
-  }
   .banner__exhortation_pc {
     display: none;
   }
   .banner__exhortation_mobile {
     width: 100%;
     display: block;
-  }
-  .banner_inner {
-    padding: 0;
   }
 }
 .steps-sale {
@@ -8612,25 +8611,23 @@ span.select2-selection__placeholder {
   font-size: 24px;
   color: #820B1A;
 }
-.contacts-content {
-  margin-bottom: 18px;
-}
-.contacts-content__title {
+.contacts-page__subtitle {
   font-family: "OpenSansSemibold", sans-serif;
   font-size: 25px;
   line-height: 1.3;
   margin: 14px 0 1px 0;
 }
-.contacts-content__main {
+.contacts-form-box {
+  margin-bottom: 18px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-.contacts-content__bg {
-  max-width: 432px;
+.contacts-form-box__bg {
+  width: 432px;
   height: auto;
-  width: 37%;
   background: url(../images/dialog-bg.jpg) no-repeat center;
+  background-size: cover;
 }
 .contacts-form {
   width: 48.5%;
@@ -8643,6 +8640,7 @@ span.select2-selection__placeholder {
   margin: 0 0 20px 0;
 }
 .contacts-form div {
+  white-space: nowrap;
   margin: 0 0 12px 0;
 }
 .contacts-form__block-area {
@@ -8692,6 +8690,34 @@ span.select2-selection__placeholder {
   margin-left: 108px;
   display: block;
 }
+@media screen and (max-width: 1180px) {
+  .contacts-form {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts-form-box__bg {
+    display: none;
+  }
+  .contacts-form {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contacts-form__area {
+    width: calc(100% - 130px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .contacts-form div {
+    white-space: normal;
+  }
+  .contacts-form__input {
+    width: 100%;
+  }
+  .contacts-form__area {
+    width: 100%;
+  }
+}
 .button_orange {
   display: inline-block;
   min-width: 110px;
@@ -8711,7 +8737,7 @@ span.select2-selection__placeholder {
   background-color: #ffffff;
   color: #fdbd41;
 }
-.button__green {
+.button_green {
   display: inline-block;
   min-width: 110px;
   height: 40px;
@@ -8726,7 +8752,7 @@ span.select2-selection__placeholder {
   background-color: #159564;
   border: 1px solid #159564;
 }
-.button__green:hover {
+.button_green:hover {
   background-color: #ffffff;
   color: #159564;
 }
@@ -8764,7 +8790,8 @@ a {
 a:hover,
 input:hover,
 select:hover,
-button:hover {
+button:hover,
+textarea:hover {
   cursor: pointer;
 }
 .wrap {
