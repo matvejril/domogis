@@ -7668,10 +7668,40 @@ span.select2-selection__placeholder {
   }
 }
 .banner {
+  display: block;
   position: relative;
   background: url(../images/banner-bg.jpg) no-repeat center;
   background-size: cover;
-  padding-top: 350px;
+  padding-bottom: 26px;
+}
+.banner__exhortation_pc {
+  width: 100%;
+}
+.banner__exhortation_mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    padding-bottom: 0;
+  }
+  .banner_inner {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .banner {
+    padding-bottom: 0;
+  }
+  .banner__exhortation_pc {
+    display: none;
+  }
+  .banner__exhortation_mobile {
+    width: 100%;
+    display: block;
+  }
+  .banner_inner {
+    padding: 0;
+  }
 }
 .steps-sale {
   position: relative;

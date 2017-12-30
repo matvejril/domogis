@@ -1,6 +1,38 @@
 .banner {
+    display: block;
     position: relative;
     background: url(../images/banner-bg.jpg) no-repeat center;
     background-size: cover;
-    padding-top: 350px;
+    padding-bottom: 26px;
+    &__exhortation_pc {
+        width: 100%;
+    }
+    &__exhortation_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding-bottom: 0;
+        &_inner {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .banner {
+        padding-bottom: 0;
+        &__exhortation_pc {
+            display: none;
+        }
+        &__exhortation_mobile {
+            width: 100%;
+            display: block;
+        }
+        &_inner {
+            padding: 0;
+        }
+    }
 }

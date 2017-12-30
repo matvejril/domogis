@@ -3,38 +3,6 @@ var less = require('gulp-less');
 // var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
-
-// var configs = {
-//     src: {
-//         less: 'less/index.less'
-//     },
-//     dist: {
-//         css: 'css'
-//     },
-//     watch: {
-//         html: 'index.html',
-//         less: 'less/*.less',
-//         css: 'css/index.css'
-//     }
-// };
-//
-//
-// gulp.task('default', ['less'], function() {
-//     browserSync.init({
-//         server: "./"
-//     });
-//     gulp.watch(configs.watch.html).on('change', browserSync.reload);
-//     gulp.watch(configs.watch.less, ['less']);
-// });
-//
-// gulp.task('less', function() {
-//     return gulp.src(configs.src.less)
-//         .pipe(less())
-//         .pipe(gulp.dest(configs.dist.css))
-//         .pipe(browserSync.stream({ match: '**/*.css' }));
-// });
-
-
 var configs = {
     src: {
         less: 'less/index.less'
@@ -43,7 +11,7 @@ var configs = {
         css: 'css'
     },
     watch: {
-        html: 'pages/index.html',
+        html: 'index.html',
         less: 'less/*.less',
         css: 'css/index.css'
     }
@@ -64,3 +32,4 @@ gulp.task('less', function() {
         .pipe(gulp.dest(configs.dist.css))
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
+
