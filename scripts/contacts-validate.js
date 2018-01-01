@@ -1,25 +1,21 @@
 $(document).ready(function () {
     var validName = false;
-    var validPhone = false;
     var validMessage = false;
 
     $(".contacts-form").submit(function(event){
         event.preventDefault();
 
-        var name = $("#contacts-name").val();
-        var phone = $("#contacts-phone").val();
-        var message = $("#contacts-message").val();
+        var name = $.trim($("#contacts-name").val());
+        var message = $.trim($("#contacts-message").val());
 
-        if (name !== "") {
+        if (name.length !== 0) {
             validName = true;
-        } else if (phone !== "") {
-            validPhone = true;
-        } else if (message !== "") {
+        }
+        if (message.length !== 0) {
             validMessage = true;
         }
-        if (validName === validPhone === validMessage === true) {
+        if (validName === validMessage === true) {
             $(".contacts-form").unbind('submit').submit();
         }
     });
 });
-
