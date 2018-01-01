@@ -12,10 +12,18 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
     <link href="../css/index.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/inputmask/dist/jquery.inputmask.bundle.js"></script>
+    <script src="../node_modules/inputmask/dist/inputmask/phone-codes/phone.js"></script>
+    <script src="../node_modules/inputmask/dist/inputmask/phone-codes/phone-be.js"></script>
+    <script src="../node_modules/inputmask/dist/inputmask/phone-codes/phone-ru.js"></script>
+    <script src="../scripts/contacts-validate.js" type="text/javascript"></script>
 </head>
 
 <body class="wrap">
+
 <div class="contacts-page">
     <div class="container">
         <h2 class="contacts-page__title">отправка на почту domogis@yandex.ru</h2>
@@ -27,18 +35,34 @@
             <h3 class="contacts-page__subtitle">Контакт</h3>
             <div class="contacts-form-box">
                 <div class="contacts-form-box__bg"></div>
-                <form class="contacts-form">
+                <form class="contacts-form" action="" method="post">
                     <h4>Напишите нам и мы свяжемся с Вами в ближайшее время</h4>
-                    <div><label for="contacts-name">Ваше имя <span>*</span></label><input id="contacts-name" class="contacts-form__input" type="text" name="contacts-form-name" required></div>
-                    <div><label for="contacts-phone">Телефон <span>*</span></label><input id="contacts-phone" class="contacts-form__input" type="text" name="contacts-form-phone" required></div>
-                    <div class="contacts-form__block-area"><label for="contacts-message">Текст сообщения</label><textarea id="contacts-message" class="contacts-form__area" name="contacts-form-message" required></textarea></div>
-                    <input class="button_green contacts-form__button" type="button" value="Отправить">
+                    <!--<div class="error-block contact-errors">-->
+                        <!--<ul>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <div>
+                        <label for="contacts-name">Ваше имя <span>*</span></label>
+                        <input id="contacts-name" class="contacts-form__input" type="text" name="contacts-name" required autofocus>
+                    </div>
+                    <div>
+                        <label for="contacts-phone">Телефон <span>*</span></label>
+                        <input id="contacts-phone" class="contacts-form__input phone-mask" type="text" name="contacts-phone" required>
+                    </div>
+                    <div class="contacts-form__block-area"><label for="contacts-message">Текст сообщения</label>
+                        <textarea id="contacts-message" class="contacts-form__area" name="contacts-message" required></textarea>
+                    </div>
+                    <button class="button_green contacts-form__button" type="submit">Отправить</button>
                 </form>
+                <script>
+                    $(document).ready(function(){
+                        $('.phone-mask').inputmask("+7(999)999-99-99");
+                    });
+                </script>
             </div>
         </div>
     </div>
 </div>
-
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__left_column">
@@ -71,5 +95,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
