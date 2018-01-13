@@ -446,33 +446,10 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "BradleyHandBold";
-  src: url(../fonts/BradleyHandITCTTBold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "OpenSansItalic";
-  src: url(../fonts/OpenSans-Italic.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "OpenSansSemibold";
-  src: url(../fonts/OpenSans-Semibold.ttf) format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -489,6 +466,165 @@ template {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #fff;
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -2628,6 +2764,52 @@ template {
 .fa-meetup:before {
   content: "\f2e0";
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+@font-face {
+  font-family: "BradleyHandBold";
+  src: url(../fonts/BradleyHandITCTTBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url(../fonts/OpenSans-Italic.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansSemibold";
+  src: url(../fonts/OpenSans-Semibold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 html {
   color: #101312;
   font-size: 14px;
@@ -7676,20 +7858,90 @@ ul.breadcrumbs li a:hover {
   background-color: #ffffff;
   color: #159564;
 }
-.contact-us__list {
+.quote {
+  position: relative;
+  left: 20%;
+  width: 67%;
+  display: inline-block;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+}
+.quote__text {
+  font-family: OpenSansItalic, sans-serif;
+  margin: 0 0 16px 0;
+  font-size: 30px;
+}
+.quote__author {
+  font-family: OpenSansItalic, sans-serif;
+  display: block;
+  margin: 0 0 35px 0;
+}
+.quote__open {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: 3px;
+  margin: 0 0 30px 0;
+  background-color: #48dd8c;
+}
+.quote__open:before {
+  position: relative;
+  right: 102%;
+  bottom: 8px;
+  content: url(../images/advantages/qoute.png);
+  display: inline-block;
+}
+.quote__close {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  height: 3px;
+  margin: 0;
+  background-color: #48dd8c;
+}
+.quote__close:after {
+  position: relative;
+  left: 35px;
+  bottom: 8px;
+  content: url(../images/advantages/qoute.png);
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .quote__text {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .quote__text {
+    font-size: 17px;
+  }
+  .quote__author {
+    font-size: 13px;
+  }
+}
+.landing-nav__trigger {
+  text-align: center;
+  color: #616161;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+  display: none;
+}
+.landing-nav__list {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.contact-us__item {
+.landing-nav__item {
   display: inline-block;
   height: 78px;
   border-bottom: 5px solid transparent;
   margin: 0 6px;
+  text-align: center;
 }
-.contact-us__item a {
+.landing-nav__item a {
   display: flex;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
@@ -7699,37 +7951,41 @@ ul.breadcrumbs li a:hover {
   margin: auto 0;
   white-space: nowrap;
 }
-.contact-us__item:first-child {
+.landing-nav__item:first-child {
   margin-left: 0;
 }
-.contact-us_active {
+.landing-nav__item_active {
   border-bottom: 5px solid #ec9c07;
 }
 @media screen and (max-width: 1180px) {
-  .contact-us__list {
+  .landing-nav__trigger {
+    display: block;
+  }
+  .landing-nav__list {
+    display: none;
     flex-direction: column;
     align-items: center;
   }
-  .contact-us__item {
-    height: 40px;
+  .landing-nav__item {
+    height: 65px;
     margin: 0;
     border: none;
     border-bottom: 1px solid black;
     width: 100%;
   }
-  .contact-us__item a {
+  .landing-nav__item a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .contact-us__item a:hover {
+  .landing-nav__item a:hover {
     color: #ec9c07;
   }
-  .contact-us__item:first-child {
+  .landing-nav__item:first-child {
     margin-top: 10px;
   }
-  .contact-us__item:last-child {
+  .landing-nav__item:last-child {
     border-bottom: none;
   }
 }
@@ -7998,54 +8254,6 @@ ul.breadcrumbs li a:hover {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-.our-advantages__quote {
-  position: relative;
-  left: 20%;
-  width: 67%;
-  display: inline-block;
-  text-align: right;
-  font-family: "Open Sans", sans-serif;
-}
-.our-advantages__quote-text {
-  font-family: OpenSansItalic, sans-serif;
-  margin: 0 0 16px 0;
-  font-size: 30px;
-}
-.our-advantages__quote-author {
-  font-family: OpenSansItalic, sans-serif;
-  display: block;
-  margin: 0 0 35px 0;
-}
-.our-advantages__quote-open {
-  position: relative;
-  display: block;
-  width: 70%;
-  height: 3px;
-  margin: 0 0 30px 0;
-  background-color: #48dd8c;
-}
-.our-advantages__quote-open:before {
-  position: relative;
-  right: 102%;
-  bottom: 8px;
-  content: url(../images/advantages/qoute.png);
-  display: inline-block;
-}
-.our-advantages__quote-close {
-  position: relative;
-  display: inline-block;
-  width: 70%;
-  height: 3px;
-  margin: 0;
-  background-color: #48dd8c;
-}
-.our-advantages__quote-close:after {
-  position: relative;
-  left: 35px;
-  bottom: 8px;
-  content: url(../images/advantages/qoute.png);
-  display: inline-block;
 }
 .advantage {
   width: 333px;

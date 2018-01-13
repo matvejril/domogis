@@ -11,9 +11,10 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link href="css/index.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>>
 </head>
 
 <body class="wrap">
@@ -242,19 +243,20 @@
     </div>
 </header>
 
-<div class="contact-us">
+<div class="landing-nav">
     <div class="container">
-        <ul class="contact-us__list">
-            <li class="contact-us__item contact-us_active">
+        <a class="landing-nav__trigger" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        <ul class="landing-nav__list">
+            <li class="landing-nav__item landing-nav__item_active">
                 <a href="/o-servise/prodat-personalnuyu-nedvizhimost">Продать персональную<br>недвижимость</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/page/partnership">О сотрудничестве</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/ot-avtora">От автора сервиса</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/kontakt">Контакты</a>
             </li>
         </ul>
@@ -338,11 +340,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="our-advantages__quote">
-                <p class="our-advantages__quote-open"></p>
-                <p class="our-advantages__quote-text">Сэкономленные деньги - все равно, что заработанные</p>
-                <p class="our-advantages__quote-author">Народная мудрость</p>
-                <p class="our-advantages__quote-close"></p>
+            <div class="quote">
+                <p class="quote__open"></p>
+                <p class="quote__text">Сэкономленные деньги - все равно, что заработанные</p>
+                <p class="quote__author">Народная мудрость</p>
+                <p class="quote__close"></p>
             </div>
         </div>
     </div>
@@ -544,5 +546,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+    $('.landing-nav__trigger').click(function() {
+        $('.landing-nav__list').slideToggle(500);
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 1160) {
+            $('.landing-nav__list').removeAttr('style');
+        }
+    });
+</script>
 </body>
 </html>

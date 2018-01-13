@@ -1,4 +1,11 @@
-.contact-us {
+.landing-nav {
+    &__trigger {
+        text-align: center;
+        color: #616161;
+        margin: 0 auto;
+        padding: 10px 10px 10px 10px;
+        display: none;
+    }
     &__list {
         display: flex;
         justify-content: flex-start;
@@ -11,6 +18,7 @@
         height: 78px;
         border-bottom: 5px solid transparent;
         margin: 0 6px;
+        text-align: center;
         a {
             display: flex;
             align-items: center;
@@ -25,19 +33,23 @@
             margin-left: 0;
         }
     }
-    &_active {
+    &__item_active {
         border-bottom: 5px solid #ec9c07;
     }
 }
 
 @media screen and (max-width: 1180px) {
-    .contact-us {
+    .landing-nav {
+        &__trigger {
+            display: block;
+        }
         &__list  {
+            display: none;
             flex-direction: column;
             align-items: center;
         }
         &__item {
-            height: 40px;
+            height: 65px;
             margin: 0;
             border: none;
             border-bottom: 1px solid black;
